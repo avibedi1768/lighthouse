@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+#navbar {
+  margin: 10px;
+  align-items: center; /*for vertical*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: fixed;
+}
+
+#navbar .LH, .LH{
+  padding: 0 5%;
+  color: #ffb03b;
+}
+
+#nav-contents{
+  width: calc(87% - 150px);
+  text-align: right;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+}
+
+#navbar #buy{
+  border: 2px solid #ffb03b;
+  border-radius: 16px;
+  padding: 10px 26px;
+  /* margin-left: 100px; */
+  background: transparent;
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+  /* box-shadow: 10px 10px 20px rgb(74, 74, 74); */
+}
+
+#navbar #buy:hover{
+  cursor: pointer;
+  background: #ffb03b;
+}
+
+.hero-img{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('background.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+}
+
+.hero-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.hero-btn{
+  padding: 10px 26px;
+  margin: 0 18px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 2px solid #ffb03b;
+  border-radius: 16px;
+  color: white;
+}
+
+.hero-btn:hover{
+  background: #ffb03b;
+  cursor: pointer;
+}
