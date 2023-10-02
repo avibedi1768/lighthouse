@@ -29,9 +29,18 @@
         <a href="#product">Products</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <button id="buy">BOOK NOW!</button>
       </div>
+      <button id="buy">BOOK NOW!</button>
+      <i id="bars" class="fas fa-bars"></i>
+      <i id="cross" class="fas fa-times"></i>
+
     </nav>
+    <div id="on-open">
+      <a href="#home">Home</a><br />
+      <a href="#product">Products</a><br />
+      <a href="#about">About</a><br />
+      <a href="#contact">Contact</a>
+    </div>
 
     <!-- hero page -->
     <div id="home" class="hero-img">
@@ -242,4 +251,18 @@
       <p>&copy;Copyright <b>Light House.</b> All Rights Reserved.</p>
     </div>
   </body>
+  <script>
+    //for navbar
+    document.querySelector("#bars").addEventListener("click", () => {
+      document.getElementById("on-open").style.display = "block";
+      document.getElementById("cross").style.display = "block";
+      document.getElementById("bars").style.display = "none";
+    });
+
+    document.querySelector("#cross").addEventListener("click", () => {
+      document.getElementById("on-open").style.display = "none";
+      document.getElementById("cross").style.display = "none";
+      document.getElementById("bars").style.display = "block";
+    });
+  </script>
 </html>

@@ -21,6 +21,11 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+#navbar i {
+  display: none;
+  margin-left: 14px;
+}
+
 #navbar .LH {
   padding: 0 4%;
   color: #ffb03b;
@@ -30,7 +35,7 @@ body {
 }
 
 #nav-contents {
-  width: calc(87% - 148px);
+  width: calc(87% - 300px);
   text-align: right;
 }
 
@@ -57,6 +62,22 @@ body {
 #navbar #buy:hover {
   cursor: pointer;
   background: #ffb03b;
+}
+
+#on-open{
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  width: 150px;
+  text-align: center;
+  padding: 80px 0 40px 0;
+  margin-left: 100px;
+}
+
+#on-open a{
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
 }
 
 /* scroll up button */
@@ -299,6 +320,26 @@ body {
 }
 
 /* responsiveness */
+@media (max-width: 750px) {
+  #navbar #nav-contents {
+    display: none;
+    width: 150px;
+  }
+  #navbar{
+    margin: 0 2px;
+  }
+  #navbar i {
+    display: block;
+  }
+  #navbar h2 {
+    margin-right: 16vw;
+    font-size: 26px;
+  }
+  #navbar .LH{
+    padding: 0;
+  }
+}
+
 @media (max-width: 600px) {
   #home .hero-text {
     margin: 0 16px;
@@ -312,19 +353,19 @@ body {
   #about .about-content img {
     box-shadow: 2px 6px 30px #ffb03b;
   }
-  #contact .contact-item h2{
+  #contact .contact-item h2 {
     font-size: 26px;
   }
-  #contact .contact-item p{
+  #contact .contact-item p {
     font-size: 14px;
   }
-  #contact .contact-item i{
+  #contact .contact-item i {
     margin-top: 18px;
   }
-  #footer h2{
+  #footer h2 {
     font-size: 26px;
   }
-  #footer p{
+  #footer p {
     font-size: 14px;
   }
 }
