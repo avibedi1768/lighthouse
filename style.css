@@ -22,8 +22,8 @@ body {
 }
 
 #navbar i {
-  display: none;
   margin-left: 14px;
+  display: none;
 }
 
 #navbar .LH {
@@ -68,10 +68,9 @@ body {
   display: none;
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
-  width: 150px;
+  width: 300px;
   text-align: center;
   padding: 80px 0 40px 0;
-  margin-left: 100px;
 }
 
 #on-open a{
@@ -328,7 +327,7 @@ body {
   #navbar{
     margin: 0 2px;
   }
-  #navbar i {
+  #navbar #bars {
     display: block;
   }
   #navbar h2 {
