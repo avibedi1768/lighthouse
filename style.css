@@ -16,12 +16,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  width: 98vw;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-#navbar .LH{
+#navbar .LH {
   padding: 0 4%;
   color: #ffb03b;
   font-family: "Sansita Swashed", cursive;
@@ -48,12 +48,10 @@ body {
   border: 2px solid #ffb03b;
   border-radius: 16px;
   padding: 10px 26px;
-  /* margin-left: 100px; */
   background: transparent;
   font-size: 14px;
   color: white;
   font-weight: 700;
-  /* box-shadow: 10px 10px 20px rgb(74, 74, 74); */
 }
 
 #navbar #buy:hover {
@@ -85,16 +83,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* position: relative; */
 }
 
 .hero-text {
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  padding-top: 45vh;
+  width: 100vw;
   text-shadow: 4px 4px 4px black;
 }
 
@@ -114,45 +108,102 @@ body {
   cursor: pointer;
 }
 
+/* products */
+#product {
+  background: white;
+  color: #4a4a4a;
+  padding-bottom: 100px;
+}
+
+#product h2 {
+  color: #ffb03b;
+  font-size: 48px;
+  text-align: center;
+  text-shadow: 4px 4px 4px #ababab;
+  padding: 50px 0 20px 0;
+  font-family: "Sansita Swashed", cursive;
+}
+
+#product #tagline {
+  text-align: center;
+}
+
+#product h3 {
+  /* color: #ffb03b; */
+  font-size: 32px;
+  font-family: "Sansita Swashed", cursive;
+  text-shadow: 4px 4px 4px #ababab;
+  text-align: center;
+  margin-top: 80px;
+}
+
+#product .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#product img {
+  height: 250px;
+  margin: 20px 50px 10px 50px;
+  border-radius: 30px;
+}
+
+#product .images p {
+  /* text-align: center; */
+  text-indent: 100px;
+}
+
+#product .images i {
+  margin-right: 18px;
+  text-indent: 0;
+}
+
 /* about section */
 #about .about-content {
   display: flex;
   flex-wrap: wrap;
-  margin: 100px 200px;
+  justify-content: center;
+  gap: 200px;
+  padding: 20px;
+  margin-bottom: 200px;
 }
 
 #about #about-heading {
   color: #ffb03b;
-  margin: 50px 200px;
-  font-size: 36px;
+  margin: 100px 0px;
+  text-align: center;
+  font-size: 48px;
   font-family: "Sansita Swashed", cursive;
   text-shadow: 4px 4px 4px #4a4a4a;
 }
 
 #about .about-content img {
   border-radius: 10px;
-  box-shadow: 10px 10px 40px #ffb03b;
+  box-shadow: 10px 10px 30px #ffb03b;
+  margin: 30px;
 }
 
 #about .about-content h2 {
   color: #ffb03b;
   font-family: "Sansita Swashed", cursive;
   font-size: 30px;
+  text-shadow: 4px 4px 4px #4a4a4a;
 }
 
 #about .about-content .para {
-  margin-left: 200px;
-  width: 650px;
+  width: 500px;
   word-spacing: 2px;
+  color: #ababab;
 }
 
 /* contact */
-#contact{
+#contact {
   background: white;
   padding-bottom: 16px;
 }
 
-.contact-banner{
+.contact-banner {
   background-image: url(contact.jpg);
   height: 250px;
   background-size: cover;
@@ -166,18 +217,18 @@ body {
   color: white;
   text-align: center;
   padding: 70px 0 30px 0;
-  font-size: 42px;
+  font-size: 48px;
   font-family: "Sansita Swashed", cursive;
   text-shadow: 4px 4px 4px black;
 }
 
-#contact p{
+#contact p {
   color: white;
   text-align: center;
   text-shadow: 4px 4px 4px black;
 }
 
-#contact .contacts{
+#contact .contacts {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -186,29 +237,29 @@ body {
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-#contact .contacts .contact-item{
+#contact .contacts .contact-item {
   text-align: center;
 }
 
-#contact .contacts i{
+#contact .contacts i {
   font-size: 26px;
   padding: 8px 12px;
-    border-radius: 50px;
+  border-radius: 50px;
   background: #ffb03b;
 }
 
-#contact .contacts p{
+#contact .contacts p {
   width: 300px;
   color: #4a4a4a;
   text-shadow: none;
 }
 
-#contact .contacts a{
+#contact .contacts a {
   text-decoration: none;
   color: #4a4a4a;
 }
 
-#contact .contacts h2{
+#contact .contacts h2 {
   margin: 0;
   padding: 10px 0;
   font-size: 36px;
@@ -218,7 +269,6 @@ body {
 
 /* footer */
 #footer {
-  /* height: 100vh; */
   background: rgba(254, 254, 254, 0.1);
   text-align: center;
   padding: 30px 0;
@@ -246,4 +296,35 @@ body {
 #footer .socials i:hover {
   cursor: pointer;
   background: #ffb03b;
+}
+
+/* responsiveness */
+@media (max-width: 600px) {
+  #home .hero-text {
+    margin: 0 16px;
+  }
+  #home .hero-text h1 {
+    font-size: 26px;
+  }
+  #home .hero-text p {
+    font-size: 14px;
+  }
+  #about .about-content img {
+    box-shadow: 2px 6px 30px #ffb03b;
+  }
+  #contact .contact-item h2{
+    font-size: 26px;
+  }
+  #contact .contact-item p{
+    font-size: 14px;
+  }
+  #contact .contact-item i{
+    margin-top: 18px;
+  }
+  #footer h2{
+    font-size: 26px;
+  }
+  #footer p{
+    font-size: 14px;
+  }
 }
