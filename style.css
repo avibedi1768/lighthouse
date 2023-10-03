@@ -22,7 +22,8 @@ body {
 }
 
 #navbar i {
-  margin-left: 14px;
+  margin-left: 10px;
+
   display: none;
 }
 
@@ -366,5 +367,22 @@ body {
   }
   #footer p {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  #navbar h2{
+    margin-right: 5vw;
+  }
+  #bars{
+    margin: 0;
+  }
+  #navbar #buy{
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+  .hero-btn{
+    margin: 10px 0;
+    font-size: 12px;
   }
 }
